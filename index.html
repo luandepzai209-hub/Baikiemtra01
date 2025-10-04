@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        input[type="file"] {
+            padding: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .reset-button {
+            background-color: #f44336;
+        }
+        .reset-button:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ĐĂNG KÝ</h1>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>Họ tên:</td>
+                <td><input type="text" name="fullname" placeholder="Nhập họ tên" required></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" placeholder="Nhập tên đăng nhập" required></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td><input type="password" name="password" placeholder="Nhập mật khẩu" required></td>
+            </tr>
+            <tr>
+                <td>Nhập lại mật khẩu:</td>
+                <td><input type="password" name="confirm_password" placeholder="Nhập lại mật khẩu" required></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" required> Nam
+                    <input type="radio" name="gender" value="Nữ"> Nữ
+                    <input type="radio" name="gender" value="Khác"> Khác
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><textarea name="address" placeholder="Nhập địa chỉ" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Avatar:</td>
+                <td><input type="file" name="avatar"></td>
+            </tr>
+            <tr>
+                <td>Sở thích:</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="Xem phim"> Xem phim
+                    <input type="checkbox" name="hobbies" value="Thể thao"> Thể thao
+                    <input type="checkbox" name="hobbies" value="Trò chơi"> Trò chơi
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Đăng ký</button>
+        <button type="reset" class="reset-button">Reset</button>
+    </form>
+</div>
+
+</body>
+</html>
